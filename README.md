@@ -7,7 +7,7 @@ Google's self driving technology implements this by recording images of the road
 Initally, our robot (or self driving car), assigns a uniform probability to being in every location in it's world. This model's the robot's initial state where it has no idea where it is. It simply assumes that it could be anywhere and doesn't apply a higher probability for being in one place over the other. This can be referred to as the state of maximum confusion.
 
 Next step is for the robot to identify distinctive features in it's environment (using cameras, sensors, radar, lasar etc.).
-This provides it with new information to modify it's information (BELIEF) about where it is, leading it to increase probability ratings in certain locations and reduce it in certain locations. This is referred to as posterior probability - probability ratings occuring after new information is received (MEASUREMENT).
+This provides it with new information to modify it's information (posterior belief - belief that occurs after new sensory information - or after a measurement has been taken.) about where it is, enabling it to modify the assignment of its probability ratings to different locations in the world - increasing it in certain, while decreasing it in other locations. This is referred to as posterior probability - probability ratings occuring after new information is received (MEASUREMENT).
 
 
 
