@@ -16,6 +16,8 @@ Next step might be that our robot moves a short distance to one direction, and i
 At this point, the robot senses (measures) it's location again, and updates it's belief by multiplying it's current belief with the previous belief. Some locations might get a higher probability, others might reduce based on new information or images/ distinctive features it "sees" in it's environment that either confirm or debunk its previous belief of where it was.
 This is the basic cycle of localization - Sense/ take measurements - where  information is increased, then move - a process which reduces information (information entropy), and then again sense - all the time updating it's belief by multiplying with the previous beliefs, then move again, repeating the convolution process (or adding it's...)
 
+Probability of each location point, Xi after taking a measurement Z = posterior distribution of place Xi given measurement Z = P(Xi|Z).
+
 
 
 
