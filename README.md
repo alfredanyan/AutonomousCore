@@ -9,6 +9,13 @@ Initally, our robot (or self driving car), assigns a uniform probability to bein
 Next step is for the robot to identify distinctive features in it's environment (using cameras, sensors, radar, lasar etc.).
 This provides it with new information to modify it's information (posterior belief - belief that occurs after new sensory information - or after a measurement has been taken.) about where it is, enabling it to modify the assignment of its probability ratings to different locations in the world - increasing it in certain, while decreasing it in other locations. This is referred to as posterior probability - probability ratings occuring after new information is received (MEASUREMENT).
 
+Our robot now has a new function (curve on the xy-axis), representing it's new current belief of it's location.
+
+Next step might be that our robot moves a short distance to one direction, and in the process, updates its belief function of where it is, a process that can be referred to as convolution.
+
+At this point, the robot senses (measures) it's location again, and updates it's belief by multiplying it's current belief with the previous belief. Some locations might get a higher probability, others might reduce based on new information or images/ distinctive features it "sees" in it's environment that either confirm or debunk its previous belief of where it was.
+This is the basic cycle of localization - Sense/ take measurements - where  information is increased, then move - a process which reduces information (information entropy), and then again sense - all the time updating it's belief by multiplying with the previous beliefs, then move again, repeating the convolution process (or adding it's...)
+
 
 
 
